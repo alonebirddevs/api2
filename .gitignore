@@ -34,15 +34,6 @@ callpage/run/
 # PHPstorm and WebStorm IDE created directory
 .idea
 
-# active config files
-config/call_flows.yml
-config/config.yml
-config/database.yml
-config/directories.yml
-config/emaildigest.yml
-config/mongodb.yml
-config/s3.yml
-
 restapi.service.start
 restapi.service.stop
 callpage.service.start

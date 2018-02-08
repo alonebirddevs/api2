@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  #DEV
+  #database: ct_dev
+  #host: dev.pg.tdc.logmycalls.com
+  database: ct_stg
+  #host: stag-pg1-la.convirza.com
+  #host: stg.pg.tdc.logmycalls.com
+  # AWS STAG 2 PG
+  host: stag-2-pg-1.convirza.com
+  port: 5432
+  username: interact
+  password: 1nt3r4ct
+  timeout: 5000
+  reconnect: true
