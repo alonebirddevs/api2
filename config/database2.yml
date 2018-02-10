@@ -3,13 +3,13 @@ production:
   #DEV
   #database: ct_dev
   #host: dev.pg.tdc.logmycalls.com
-  database: d459d6o5f2febp
+  database: ct_stg
   #host: stag-pg1-la.convirza.com
   #host: stg.pg.tdc.logmycalls.com
   # AWS STAG 2 PG
-  host: ec2-54-227-250-33.compute-1.amazonaws.com
+  host: stag-2-pg-1.convirza.com
   port: 5432
-  username: emqidxkdhtfann
-  password: 2513a9a7b6eef937057b67db5b6444cd006ff8d6561e2d781dc2cb59bbde1774
+  username: interact
+  password: 1nt3r4ct
   timeout: 5000
   reconnect: true

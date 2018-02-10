@@ -27,6 +27,7 @@ router.use(function (req, res, next) {
 
 
 router.get('/', function(req, res) {
+	console.log("Im Here To Fucksss");
 	user.getUserById(req.params.id, function (err, data) {
 	   res.send(data);
 	});
