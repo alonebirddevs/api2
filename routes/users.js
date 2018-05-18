@@ -1,6 +1,3 @@
-/**
- * Created by davey on 3/31/15.
- */
 var express = require('express'),
 user = require('../controllers/userController'),
 router = express.Router();
@@ -9,7 +6,7 @@ router = express.Router();
 router.use(function (req, res, next) {
 
 	// Website you wish to allow to connect
-	//res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+	res.setHeader('Access-Control-Allow-Origin','*');
 
 	// Request methods you wish to allow
 	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -27,16 +24,17 @@ router.use(function (req, res, next) {
 
 
 router.get('/', function(req, res) {
-	console.log("Im Here To Fucksss");
+	console.log("Im Here To Fuck asss");
 	user.getUserById(req.params.id, function (err, data) {
 	   res.send(data);
 	});
 });
 
-router.post('/', function(req, res) {
-	user.getUserById(req, function(err, data) {
-		res.send(data);
-	});
+router.post('/auth/login', function(req, res) {
+	res.send({status:'success',data:{}});
+	// user.getUserById(req, function(err, data) {
+	// 	res.send(data);
+	// });
 });
 
 router.put('/', function(req, res) {
